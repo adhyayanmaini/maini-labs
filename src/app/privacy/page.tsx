@@ -171,11 +171,11 @@ export default function PrivacyPolicy() {
               </p>
             </div>
             <a
-              href="mailto:support@mainilabs.com"
+              href="mailto:mainilabs@gmail.com"
               className="inline-flex items-center gap-2 text-brand-blue-light font-bold hover:text-white transition-colors"
             >
               <Mail className="h-4 w-4" />
-              <span>support@mainilabs.com</span>
+              <span>mainilabs@gmail.com</span>
             </a>
           </section>
         </div>
