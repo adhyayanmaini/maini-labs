@@ -58,7 +58,7 @@ export default function CalendlyModal({ isOpen, onClose, calendlyUrl }: Calendly
   const onSubmit = async (data: BookingFormData) => {
     setIsSubmitting(true);
     
-    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "service_ascend_ai";
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "service_maini_labs";
     const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "template_demo_booking";
     const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "user_public_key_placeholder";
 
@@ -119,8 +119,8 @@ export default function CalendlyModal({ isOpen, onClose, calendlyUrl }: Calendly
             transition={{ type: "spring", duration: 0.5 }}
             className="relative z-10 w-full max-w-4xl overflow-hidden rounded-2xl border border-white/10 bg-surface-dark shadow-2xl max-h-[90vh] md:max-h-none flex flex-col"
           >
-            {/* Red Accent Top Bar */}
-            <div className="h-1.5 w-full bg-gradient-to-r from-brand-red to-brand-red-light" />
+            {/* Blue Accent Top Bar */}
+            <div className="h-1.5 w-full bg-gradient-to-r from-brand-blue to-brand-blue-light" />
 
             {/* Close Button */}
             <button
@@ -134,22 +134,22 @@ export default function CalendlyModal({ isOpen, onClose, calendlyUrl }: Calendly
               {/* Left Info Panel */}
               <div className="border-b border-white/10 bg-card-dark p-8 md:border-b-0 md:border-r">
                 <div className="mb-6">
-                  <span className="rounded-full bg-brand-red/10 px-3 py-1 text-xs font-semibold tracking-wider text-brand-red-light uppercase border border-brand-red/20">
+                  <span className="rounded-full bg-brand-blue/10 px-3 py-1 text-xs font-semibold tracking-wider text-brand-blue-light uppercase border border-brand-blue/20">
                     Free Consultation
                   </span>
                 </div>
-                <h3 className="text-2xl font-bold tracking-tight text-white">Ascend AI Demo</h3>
+                <h3 className="text-2xl font-bold tracking-tight text-white">Maini Labs Demo</h3>
                 <p className="mt-3 text-sm leading-relaxed text-text-muted">
                   Discover how our custom AI calling, texting, and operational automation systems can scale your revenue and free up your team.
                 </p>
 
                 <div className="mt-8 space-y-4">
                   <div className="flex items-center gap-3 text-sm text-text-muted">
-                    <Clock className="h-5 w-5 text-brand-red-light flex-shrink-0" />
+                    <Clock className="h-5 w-5 text-brand-blue-light flex-shrink-0" />
                     <span>30 Minutes Strategy Session</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-text-muted">
-                    <CalendarIcon className="h-5 w-5 text-brand-red-light flex-shrink-0" />
+                    <CalendarIcon className="h-5 w-5 text-brand-blue-light flex-shrink-0" />
                     <span>Video Conference</span>
                   </div>
                 </div>
@@ -182,11 +182,11 @@ export default function CalendlyModal({ isOpen, onClose, calendlyUrl }: Calendly
                   <>
                     {/* Step Tracker */}
                     <div className="mb-8 flex items-center gap-3 text-xs uppercase tracking-wider font-semibold">
-                      <span className={step === "date" ? "text-brand-red-light" : "text-text-muted"}>1. Pick Time</span>
+                      <span className={step === "date" ? "text-brand-blue-light" : "text-text-muted"}>1. Pick Time</span>
                       <ChevronRight className="h-3 w-3 text-text-muted" />
-                      <span className={step === "form" ? "text-brand-red-light" : "text-text-muted"}>2. Your Details</span>
+                      <span className={step === "form" ? "text-brand-blue-light" : "text-text-muted"}>2. Your Details</span>
                       <ChevronRight className="h-3 w-3 text-text-muted" />
-                      <span className={step === "success" ? "text-brand-red-light" : "text-text-muted"}>3. Confirmed</span>
+                      <span className={step === "success" ? "text-brand-blue-light" : "text-text-muted"}>3. Confirmed</span>
                     </div>
 
                     {step === "date" && (
@@ -200,7 +200,7 @@ export default function CalendlyModal({ isOpen, onClose, calendlyUrl }: Calendly
                                 onClick={() => handleDateSelect(`${d.day}, ${d.month} ${d.date}`)}
                                 className={`flex flex-col items-center justify-center rounded-xl p-3 border transition-all ${
                                   selectedDate?.includes(`${d.month} ${d.date}`)
-                                    ? "bg-brand-red/10 border-brand-red text-white shadow-[0_0_15px_rgba(185,28,28,0.15)]"
+                                    ? "bg-brand-blue/10 border-brand-blue text-white shadow-[0_0_15px_rgba(0,82,255,0.15)]"
                                     : "bg-card-dark border-white/5 text-text-muted hover:border-white/20 hover:text-white"
                                 }`}
                               >
@@ -222,7 +222,7 @@ export default function CalendlyModal({ isOpen, onClose, calendlyUrl }: Calendly
                                 <button
                                   key={time}
                                   onClick={() => handleTimeSelect(time)}
-                                  className="rounded-xl border border-white/5 bg-card-dark py-3 text-center text-sm font-medium text-text-muted transition-all hover:border-brand-red hover:text-white hover:bg-brand-red/5"
+                                  className="rounded-xl border border-white/5 bg-card-dark py-3 text-center text-sm font-medium text-text-muted transition-all hover:border-brand-blue hover:text-white hover:bg-brand-blue/5"
                                 >
                                   {time}
                                 </button>
@@ -247,9 +247,9 @@ export default function CalendlyModal({ isOpen, onClose, calendlyUrl }: Calendly
                                 {...register("fullName", { required: "Name is required" })}
                                 type="text"
                                 placeholder="John Doe"
-                                className="w-full rounded-lg border border-white/10 bg-card-dark px-4 py-3 text-sm text-white placeholder-white/30 focus:border-brand-red focus:outline-none focus:ring-1 focus:ring-brand-red"
+                                className="w-full rounded-lg border border-white/10 bg-card-dark px-4 py-3 text-sm text-white placeholder-white/30 focus:border-brand-blue focus:outline-none focus:ring-1 focus:ring-brand-blue"
                               />
-                              {errors.fullName && <p className="mt-1 text-xs text-brand-red-light">{errors.fullName.message}</p>}
+                              {errors.fullName && <p className="mt-1 text-xs text-brand-blue-light">{errors.fullName.message}</p>}
                             </div>
                             <div>
                               <label className="block text-xs font-semibold text-text-muted uppercase mb-1.5">Work Email</label>
@@ -260,9 +260,9 @@ export default function CalendlyModal({ isOpen, onClose, calendlyUrl }: Calendly
                                 })}
                                 type="email"
                                 placeholder="john@company.com"
-                                className="w-full rounded-lg border border-white/10 bg-card-dark px-4 py-3 text-sm text-white placeholder-white/30 focus:border-brand-red focus:outline-none focus:ring-1 focus:ring-brand-red"
+                                className="w-full rounded-lg border border-white/10 bg-card-dark px-4 py-3 text-sm text-white placeholder-white/30 focus:border-brand-blue focus:outline-none focus:ring-1 focus:ring-brand-blue"
                               />
-                              {errors.email && <p className="mt-1 text-xs text-brand-red-light">{errors.email.message}</p>}
+                              {errors.email && <p className="mt-1 text-xs text-brand-blue-light">{errors.email.message}</p>}
                             </div>
                           </div>
 
@@ -273,9 +273,9 @@ export default function CalendlyModal({ isOpen, onClose, calendlyUrl }: Calendly
                                 {...register("phone", { required: "Phone number is required" })}
                                 type="tel"
                                 placeholder="+1 (555) 000-0000"
-                                className="w-full rounded-lg border border-white/10 bg-card-dark px-4 py-3 text-sm text-white placeholder-white/30 focus:border-brand-red focus:outline-none focus:ring-1 focus:ring-brand-red"
+                                className="w-full rounded-lg border border-white/10 bg-card-dark px-4 py-3 text-sm text-white placeholder-white/30 focus:border-brand-blue focus:outline-none focus:ring-1 focus:ring-brand-blue"
                               />
-                              {errors.phone && <p className="mt-1 text-xs text-brand-red-light">{errors.phone.message}</p>}
+                              {errors.phone && <p className="mt-1 text-xs text-brand-blue-light">{errors.phone.message}</p>}
                             </div>
                             <div>
                               <label className="block text-xs font-semibold text-text-muted uppercase mb-1.5">Website / CRM</label>
@@ -283,9 +283,9 @@ export default function CalendlyModal({ isOpen, onClose, calendlyUrl }: Calendly
                                 {...register("website", { required: "Website or CRM name is required" })}
                                 type="text"
                                 placeholder="www.yourcompany.com"
-                                className="w-full rounded-lg border border-white/10 bg-card-dark px-4 py-3 text-sm text-white placeholder-white/30 focus:border-brand-red focus:outline-none focus:ring-1 focus:ring-brand-red"
+                                className="w-full rounded-lg border border-white/10 bg-card-dark px-4 py-3 text-sm text-white placeholder-white/30 focus:border-brand-blue focus:outline-none focus:ring-1 focus:ring-brand-blue"
                               />
-                              {errors.website && <p className="mt-1 text-xs text-brand-red-light">{errors.website.message}</p>}
+                              {errors.website && <p className="mt-1 text-xs text-brand-blue-light">{errors.website.message}</p>}
                             </div>
                           </div>
 
@@ -293,7 +293,7 @@ export default function CalendlyModal({ isOpen, onClose, calendlyUrl }: Calendly
                             <label className="block text-xs font-semibold text-text-muted uppercase mb-1.5">Company Size</label>
                             <select
                               {...register("companySize")}
-                              className="w-full rounded-lg border border-white/10 bg-card-dark px-4 py-3 text-sm text-white focus:border-brand-red focus:outline-none focus:ring-1 focus:ring-brand-red"
+                              className="w-full rounded-lg border border-white/10 bg-card-dark px-4 py-3 text-sm text-white focus:border-brand-blue focus:outline-none focus:ring-1 focus:ring-brand-blue"
                             >
                               <option value="1-5">1-5 Employees</option>
                               <option value="6-20">6-20 Employees</option>
@@ -313,7 +313,7 @@ export default function CalendlyModal({ isOpen, onClose, calendlyUrl }: Calendly
                             <button
                               type="submit"
                               disabled={isSubmitting}
-                              className="flex items-center justify-center gap-2 rounded-xl bg-brand-red hover:bg-brand-red-light text-white font-semibold text-sm px-6 py-3 transition-colors disabled:opacity-50"
+                              className="flex items-center justify-center gap-2 rounded-xl bg-brand-blue hover:bg-brand-blue-light text-white font-semibold text-sm px-6 py-3 transition-colors disabled:opacity-50"
                             >
                               {isSubmitting ? (
                                 <>
@@ -336,28 +336,28 @@ export default function CalendlyModal({ isOpen, onClose, calendlyUrl }: Calendly
                         className="flex flex-col items-center justify-center text-center py-12"
                       >
                         <div className="relative mb-6">
-                          <div className="absolute inset-0 bg-brand-red/30 blur-xl rounded-full" />
-                          <CheckCircle2 className="h-16 w-16 text-brand-red relative z-10" />
+                          <div className="absolute inset-0 bg-brand-blue/30 blur-xl rounded-full" />
+                          <CheckCircle2 className="h-16 w-16 text-brand-blue relative z-10" />
                         </div>
                         <h4 className="text-2xl font-bold text-white">Your Demo is Confirmed!</h4>
                         <p className="mt-3 text-text-muted max-w-md text-sm leading-relaxed">
-                          We've sent a calendar invitation and confirmation email with meeting details. Prepare to see how Ascend AI can automate your growth.
+                          We've sent a calendar invitation and confirmation email with meeting details. Prepare to see how Maini Labs can automate your growth.
                         </p>
                         <div className="mt-8 rounded-xl border border-white/10 bg-card-dark p-6 max-w-sm w-full">
                           <h5 className="font-semibold text-white text-sm">Meeting Schedule</h5>
                           <div className="mt-3 flex items-center gap-3 justify-center text-sm text-text-muted">
-                            <CalendarIcon className="h-4 w-4 text-brand-red-light" />
+                            <CalendarIcon className="h-4 w-4 text-brand-blue-light" />
                             <span>{selectedDate}</span>
                           </div>
                           <div className="mt-2 flex items-center gap-3 justify-center text-sm text-text-muted">
-                            <Clock className="h-4 w-4 text-brand-red-light" />
+                            <Clock className="h-4 w-4 text-brand-blue-light" />
                             <span>{selectedTime} EST</span>
                           </div>
                         </div>
 
                         <button
                           onClick={handleClose}
-                          className="mt-8 text-sm font-bold text-brand-red-light hover:text-white transition-colors"
+                          className="mt-8 text-sm font-bold text-brand-blue-light hover:text-white transition-colors"
                         >
                           Close Window
                         </button>

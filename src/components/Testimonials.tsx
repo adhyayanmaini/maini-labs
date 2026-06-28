@@ -7,7 +7,7 @@ import { Quote } from "lucide-react";
 export default function Testimonials() {
   const testimonials = [
     {
-      quote: "Before Ascend AI, we were sending roughly 40% of our listing inquiries to voicemail because our agents were on client showings. Since installing their voice agent, every single call is answered in under two seconds. Our booked consultations went up by 37% in month one.",
+      quote: "Before Maini Labs, we were sending roughly 40% of our listing inquiries to voicemail because our agents were on client showings. Since installing their voice agent, every single call is answered in under two seconds. Our booked consultations went up by 37% in month one.",
       author: "Marcus Vance",
       role: "Managing Partner",
       company: "Vance Realty Group",
@@ -20,10 +20,10 @@ export default function Testimonials() {
       role: "Operations Director",
       company: "Sterling Law Partners",
       initials: "ES",
-      glowColor: "group-hover:border-brand-red/30 group-hover:shadow-[0_0_25px_rgba(185,28,28,0.08)]",
+      glowColor: "group-hover:border-brand-blue/30 group-hover:shadow-[0_0_25px_rgba(0,82,255,0.08)]",
     },
     {
-      quote: "Our marketing spend ROI has doubled. Previously, we lost leads that came in after 6 PM because nobody was working. Ascend AI's system engages evening traffic instantly, qualifies them, and books them for the next morning.",
+      quote: "Our marketing spend ROI has doubled. Previously, we lost leads that came in after 6 PM because nobody was working. Maini Labs' system engages evening traffic instantly, qualifies them, and books them for the next morning.",
       author: "Devon Cross",
       role: "Founder & CEO",
       company: "Cross Financial Group",
@@ -34,12 +34,12 @@ export default function Testimonials() {
 
   return (
     <section className="relative py-24 bg-surface-dark overflow-hidden border-t border-b border-white/5">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] rounded-full bg-brand-red/2 blur-[130px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] rounded-full bg-brand-blue/2 blur-[130px] pointer-events-none" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold tracking-widest text-brand-red-light uppercase block mb-3">
+          <span className="text-xs font-bold tracking-widest text-brand-blue-light uppercase block mb-3">
             Client Success
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-gradient-silver">
@@ -62,7 +62,7 @@ export default function Testimonials() {
               className={`group relative flex flex-col justify-between p-8 rounded-2xl border border-white/5 bg-card-dark transition-all duration-500 ${t.glowColor}`}
             >
               <div>
-                <Quote className="h-8 w-8 text-brand-red-light/35 mb-6 transition-transform group-hover:scale-105" />
+                <Quote className="h-8 w-8 text-brand-blue-light/35 mb-6 transition-transform group-hover:scale-105" />
                 <p className="text-sm leading-relaxed text-text-muted italic">
                   "{t.quote}"
                 </p>
@@ -76,7 +76,7 @@ export default function Testimonials() {
                 <div>
                   <h4 className="text-sm font-bold text-white">{t.author}</h4>
                   <p className="text-xs text-text-muted mt-0.5">
-                    {t.role}, <span className="text-brand-red-light">{t.company}</span>
+                    {t.role}, <span className="text-brand-blue-light">{t.company}</span>
                   </p>
                 </div>
               </div>

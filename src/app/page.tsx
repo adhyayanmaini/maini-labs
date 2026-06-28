@@ -60,7 +60,7 @@ export default function Home() {
         {/* Section 5: Industry Focus */}
         <Industries />
 
-        {/* Section 6: Why Ascend AI */}
+        {/* Section 6: Why Maini Labs */}
         <WhyUs />
 
         {/* Section 7: Demo Preview */}

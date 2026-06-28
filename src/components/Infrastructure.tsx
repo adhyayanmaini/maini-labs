@@ -10,8 +10,8 @@ export default function Infrastructure() {
       icon: Phone,
       title: "AI Voice Agents",
       description: "Answer, qualify, and converse naturally with incoming callers 24/7. Never send another hot lead to voicemail.",
-      color: "from-red-500/20 to-brand-red/5",
-      iconColor: "text-red-400",
+      color: "from-blue-500/20 to-brand-blue/5",
+      iconColor: "text-blue-400",
     },
     {
       icon: MessageSquare,
@@ -31,8 +31,8 @@ export default function Infrastructure() {
       icon: Filter,
       title: "AI Lead Qualification",
       description: "Filter and score incoming prospects based on budget, timeline, and intent before transferring to your sales team.",
-      color: "from-brand-red/20 to-brand-red-light/5",
-      iconColor: "text-brand-red-light",
+      color: "from-brand-blue/20 to-brand-blue-light/5",
+      iconColor: "text-brand-blue-light",
     },
     {
       icon: CalendarClock,
@@ -53,12 +53,12 @@ export default function Infrastructure() {
   return (
     <section id="solutions" className="relative py-24 bg-surface-dark border-t border-b border-white/5">
       {/* Decorative background glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] rounded-full bg-brand-red/3 blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] rounded-full bg-brand-blue/3 blur-[120px] pointer-events-none" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
         {/* Header Content */}
         <div className="max-w-3xl mb-16">
-          <span className="text-xs font-bold tracking-widest text-brand-red-light uppercase block mb-3">
+          <span className="text-xs font-bold tracking-widest text-brand-blue-light uppercase block mb-3">
             Core Infrastructure
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-gradient-silver">
@@ -66,7 +66,7 @@ export default function Infrastructure() {
           </h2>
           <p className="mt-6 text-base sm:text-lg text-text-muted leading-relaxed max-w-2xl">
             Businesses lose up to 60% of their revenue because they respond too slowly to inbound inquiries.
-            Ascend AI solves this leakage by deploying intelligent systems that respond in seconds, 24/7.
+            Maini Labs solves this leakage by deploying intelligent systems that respond in seconds, 24/7.
           </p>
         </div>
 

@@ -46,19 +46,19 @@ export default function FAQ() {
   return (
     <section id="faq" className="relative py-24 bg-bg-dark overflow-hidden">
       {/* Decorative background glows */}
-      <div className="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] rounded-full bg-brand-red/3 blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] rounded-full bg-brand-blue/3 blur-[120px] pointer-events-none" />
 
       <div className="mx-auto max-w-4xl px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold tracking-widest text-brand-red-light uppercase block mb-3">
+          <span className="text-xs font-bold tracking-widest text-brand-blue-light uppercase block mb-3">
             Questions
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-gradient-silver">
             Frequently Asked Questions
           </h2>
           <p className="mt-4 text-sm sm:text-base text-text-muted">
-            Everything you need to know about setting up Ascend AI systems.
+            Everything you need to know about setting up Maini Labs systems.
           </p>
         </div>
 
@@ -77,7 +77,7 @@ export default function FAQ() {
                 >
                   <span className="text-sm sm:text-base font-bold text-white pr-4">{faq.question}</span>
                   <div className={`p-1.5 rounded-lg bg-white/5 border border-white/10 text-text-muted transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}>
-                    {isOpen ? <Minus className="h-4 w-4 text-brand-red-light" /> : <Plus className="h-4 w-4" />}
+                    {isOpen ? <Minus className="h-4 w-4 text-brand-blue-light" /> : <Plus className="h-4 w-4" />}
                   </div>
                 </button>
 

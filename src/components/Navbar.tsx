@@ -58,12 +58,17 @@ export default function Navbar({ onBookDemoClick }: NavbarProps) {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <nav className="flex items-center justify-between">
             {/* Logo */}
-            <a href="#" className="flex items-center gap-2 group">
-              <div className="relative flex h-9 w-9 items-center justify-center rounded-lg bg-brand-red transition-all group-hover:bg-brand-red-light shadow-[0_0_15px_rgba(185,28,28,0.3)]">
-                <Rocket className="h-5 w-5 text-white transition-transform group-hover:translate-y-[-1px] group-hover:translate-x-[1px]" />
+            <a href="#" className="flex items-center gap-3 group">
+              <div className="relative flex items-center justify-center text-white transition-all">
+                <svg className="h-8 w-auto text-white group-hover:text-brand-blue-light transition-colors" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  {/* Stylized M */}
+                  <path d="M 28 80 L 28 20 L 50 52 L 72 20 L 72 58" stroke="currentColor" strokeWidth="14" strokeLinejoin="miter" strokeLinecap="butt" />
+                  {/* Blue square */}
+                  <rect x="65" y="69" width="14" height="14" fill="#0052FF" />
+                </svg>
               </div>
-              <span className="text-xl font-bold tracking-tight text-white uppercase font-sans">
-                Ascend <span className="text-brand-red-light">AI</span>
+              <span className="text-xl font-extrabold tracking-tight text-white font-sans flex items-center gap-1">
+                MAINI <span className="font-light text-brand-blue-light">LABS</span>
               </span>
             </a>
 
@@ -85,7 +90,7 @@ export default function Navbar({ onBookDemoClick }: NavbarProps) {
             <div className="hidden md:flex items-center">
               <button
                 onClick={onBookDemoClick}
-                className="glow-button relative overflow-hidden rounded-xl bg-gradient-to-r from-brand-red to-brand-red-light px-5 py-2.5 text-sm font-bold text-white transition-all shadow-[0_0_20px_rgba(185,28,28,0.2)] hover:shadow-[0_0_30px_rgba(185,28,28,0.4)] hover:scale-[1.02]"
+                className="glow-button relative overflow-hidden rounded-xl bg-gradient-to-r from-brand-blue to-brand-blue-light px-5 py-2.5 text-sm font-bold text-white transition-all shadow-[0_0_20px_rgba(0,82,255,0.2)] hover:shadow-[0_0_30px_rgba(0,82,255,0.4)] hover:scale-[1.02]"
               >
                 <span className="relative z-10">Book Demo</span>
               </button>
@@ -128,7 +133,7 @@ export default function Navbar({ onBookDemoClick }: NavbarProps) {
                     setIsOpen(false);
                     onBookDemoClick();
                   }}
-                  className="w-full flex justify-center items-center rounded-xl bg-brand-red py-3 text-base font-bold text-white transition-all hover:bg-brand-red-light"
+                  className="w-full flex justify-center items-center rounded-xl bg-brand-blue py-3 text-base font-bold text-white transition-all hover:bg-brand-blue-light"
                 >
                   Book Demo
                 </button>

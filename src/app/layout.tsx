@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ascend AI — AI Systems That Turn Leads Into Clients",
-  description: "Ascend AI builds premium, enterprise-grade AI calling, SMS, and workflow automation systems that answer calls, qualify leads, and book appointments 24/7 so you never lose a deal.",
+  title: "Maini Labs — AI Systems That Turn Leads Into Clients",
+  description: "Maini Labs builds premium, enterprise-grade AI calling, SMS, and workflow automation systems that answer calls, qualify leads, and book appointments 24/7 so you never lose a deal.",
   keywords: [
     "AI automation", 
     "real estate AI", 
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     "conversational AI for business",
     "automated appointment booking"
   ],
-  authors: [{ name: "Ascend AI Team" }],
-  creator: "Ascend AI",
-  publisher: "Ascend AI",
+  authors: [{ name: "Maini Labs Team" }],
+  creator: "Maini Labs",
+  publisher: "Maini Labs",
   robots: {
     index: true,
     follow: true,
@@ -42,20 +42,20 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Ascend AI — AI Systems That Turn Leads Into Clients",
-    description: "Ascend AI builds premium, enterprise-grade AI calling, SMS, and workflow automation systems that answer calls, qualify leads, and book appointments 24/7 so you never lose a deal.",
-    url: "https://ascendai.com",
-    siteName: "Ascend AI",
+    title: "Maini Labs — AI Systems That Turn Leads Into Clients",
+    description: "Maini Labs builds premium, enterprise-grade AI calling, SMS, and workflow automation systems that answer calls, qualify leads, and book appointments 24/7 so you never lose a deal.",
+    url: "https://mainilabs.com",
+    siteName: "Maini Labs",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ascend AI — AI Systems That Turn Leads Into Clients",
+    title: "Maini Labs — AI Systems That Turn Leads Into Clients",
     description: "Enterprise-grade AI calling, SMS, and workflow automation systems operating 24/7.",
   },
   alternates: {
-    canonical: "https://ascendai.com",
+    canonical: "https://mainilabs.com",
   },
 };
 
@@ -67,10 +67,10 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "Ascend AI",
-    "image": "https://ascendai.com/og-image.jpg",
-    "@id": "https://ascendai.com/#organization",
-    "url": "https://ascendai.com",
+    "name": "Maini Labs",
+    "image": "https://mainilabs.com/og-image.jpg",
+    "@id": "https://mainilabs.com/#organization",
+    "url": "https://mainilabs.com",
     "telephone": "+1-800-555-0199",
     "priceRange": "$$$",
     "address": {
@@ -101,8 +101,8 @@ export default function RootLayout({
       "closes": "23:59"
     },
     "sameAs": [
-      "https://twitter.com/ascendai",
-      "https://linkedin.com/company/ascendai"
+      "https://twitter.com/mainilabs",
+      "https://linkedin.com/company/mainilabs"
     ]
   };
 
@@ -111,7 +111,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-bg-dark text-white selection:bg-brand-red/30 selection:text-white">
+      <body className="min-h-full flex flex-col bg-bg-dark text-white selection:bg-brand-blue/30 selection:text-white">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

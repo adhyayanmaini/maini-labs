@@ -48,12 +48,12 @@ export default function Industries() {
   return (
     <section id="industries" className="relative py-24 bg-bg-dark overflow-hidden">
       {/* Decorative background gradients */}
-      <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-brand-red/5 blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-brand-blue/5 blur-[100px] pointer-events-none" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold tracking-widest text-brand-red-light uppercase block mb-3">
+          <span className="text-xs font-bold tracking-widest text-brand-blue-light uppercase block mb-3">
             Versatile Solutions
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-gradient-silver">
@@ -77,14 +77,14 @@ export default function Industries() {
                 transition={{ duration: 0.4, delay: index * 0.08 }}
                 className={`relative flex flex-col justify-between p-8 rounded-2xl border transition-all duration-300 ${
                   ind.isHighlighted
-                    ? "bg-gradient-to-b from-card-dark to-brand-red/10 border-brand-red shadow-[0_0_30px_rgba(185,28,28,0.15)] scale-[1.02] md:scale-[1.03]"
+                    ? "bg-gradient-to-b from-card-dark to-brand-blue/10 border-brand-blue shadow-[0_0_30px_rgba(0,82,255,0.15)] scale-[1.02] md:scale-[1.03]"
                     : "bg-surface-dark border-white/5 hover:border-white/20"
                 }`}
               >
                 {/* Highlight Tag */}
                 {ind.isHighlighted && (
                   <div className="absolute -top-3 left-6">
-                    <span className="rounded-full bg-brand-red px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white">
+                    <span className="rounded-full bg-brand-blue px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white">
                       {ind.tag}
                     </span>
                   </div>
@@ -93,7 +93,7 @@ export default function Industries() {
                 <div>
                   <div className={`inline-flex p-3 rounded-xl mb-6 border ${
                     ind.isHighlighted
-                      ? "bg-brand-red/15 border-brand-red/30 text-brand-red-light"
+                      ? "bg-brand-blue/15 border-brand-blue/30 text-brand-blue-light"
                       : "bg-white/5 border-white/10 text-text-muted"
                   }`}>
                     <Icon className="h-6 w-6" />
@@ -105,7 +105,7 @@ export default function Industries() {
 
                 <div className="mt-8 pt-4 border-t border-white/5">
                   <span className={`text-xs font-semibold ${
-                    ind.isHighlighted ? "text-brand-red-light" : "text-text-muted opacity-75"
+                    ind.isHighlighted ? "text-brand-blue-light" : "text-text-muted opacity-75"
                   }`}>
                     {ind.isHighlighted ? "Active Deployment Available" : "Custom Configuration"}
                   </span>

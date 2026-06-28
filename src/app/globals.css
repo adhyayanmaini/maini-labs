@@ -4,8 +4,8 @@
   --color-bg-dark: #070707;
   --color-surface-dark: #0D0D0D;
   --color-card-dark: #111111;
-  --color-brand-red: #B91C1C;
-  --color-brand-red-light: #DC2626;
+  --color-brand-blue: #0052FF;
+  --color-brand-blue-light: #4A88FF;
   --color-border-dark: rgba(255, 255, 255, 0.08);
   --color-text-muted: #A1A1AA;
   
@@ -67,8 +67,8 @@ body {
 }
 
 .glass-card:hover {
-  border-color: rgba(185, 28, 28, 0.3);
-  box-shadow: 0 0 30px rgba(185, 28, 28, 0.08);
+  border-color: rgba(0, 82, 255, 0.3);
+  box-shadow: 0 0 30px rgba(0, 82, 255, 0.08);
   transform: translateY(-2px);
 }
 
@@ -79,9 +79,9 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-/* Accent Red Gradient */
-.text-gradient-red {
-  background: linear-gradient(135deg, #ff4d4d 0%, #b91c1c 100%);
+/* Accent Blue Gradient */
+.text-gradient-blue {
+  background: linear-gradient(135deg, #60a5fa 0%, #0052ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -100,7 +100,7 @@ body {
   left: 50%;
   width: 150px;
   height: 150px;
-  background: radial-gradient(circle, rgba(220, 38, 38, 0.4) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 82, 255, 0.4) 0%, transparent 70%);
   transform: translate(-50%, -50%) scale(0);
   transition: transform 0.5s ease;
   pointer-events: none;

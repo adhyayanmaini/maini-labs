@@ -4,10 +4,10 @@ import Link from "next/link";
 
 export default function PrivacyPolicy() {
   return (
-    <div className="min-h-screen bg-bg-dark text-white font-sans selection:bg-brand-red/30 selection:text-white">
+    <div className="min-h-screen bg-bg-dark text-white font-sans selection:bg-brand-blue/30 selection:text-white">
       {/* Premium background radial glows */}
-      <div className="absolute top-0 left-[-10%] w-[600px] h-[600px] rounded-full bg-brand-red/5 blur-[150px] pointer-events-none" />
-      <div className="absolute bottom-[20%] right-[-10%] w-[600px] h-[600px] rounded-full bg-brand-red-light/5 blur-[150px] pointer-events-none" />
+      <div className="absolute top-0 left-[-10%] w-[600px] h-[600px] rounded-full bg-brand-blue/5 blur-[150px] pointer-events-none" />
+      <div className="absolute bottom-[20%] right-[-10%] w-[600px] h-[600px] rounded-full bg-brand-blue-light/5 blur-[150px] pointer-events-none" />
 
       {/* Header Container */}
       <header className="sticky top-0 z-40 bg-black/60 border-b border-white/5 backdrop-blur-md py-6">
@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
             <span>Back to Home</span>
           </Link>
           <div className="flex items-center gap-2">
-            <ShieldCheck className="h-5 w-5 text-brand-red-light" />
+            <ShieldCheck className="h-5 w-5 text-brand-blue-light" />
             <span className="text-xs font-bold uppercase tracking-wider text-white">
               Compliance & Legal
             </span>
@@ -39,7 +39,7 @@ export default function PrivacyPolicy() {
         {/* Quick Summary Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <div className="p-6 rounded-xl border border-white/5 bg-card-dark">
-            <Lock className="h-5 w-5 text-brand-red-light mb-3" />
+            <Lock className="h-5 w-5 text-brand-blue-light mb-3" />
             <h3 className="text-sm font-bold text-white mb-2">Secure Processing</h3>
             <p className="text-xs text-text-muted leading-relaxed">
               We encrypt all telemetry data, voice transcripts, and contact records end-to-end.
@@ -66,7 +66,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-xl font-bold text-white mb-4">1. Overview</h2>
             <p>
-              Ascend AI ("Company", "we", "us", or "our") provides business process automation services, including artificial intelligence (AI) voice dialers, AI SMS messaging engines, and database synchronization tools. This Privacy Policy describes how we collect, process, secure, and disclose personal data when you interact with our website, use our software interfaces, or speak with our AI agent representatives.
+              Maini Labs ("Company", "we", "us", or "our") provides business process automation services, including artificial intelligence (AI) voice dialers, AI SMS messaging engines, and database synchronization tools. This Privacy Policy describes how we collect, process, secure, and disclose personal data when you interact with our website, use our software interfaces, or speak with our AI agent representatives.
             </p>
           </section>
 
@@ -88,13 +88,13 @@ export default function PrivacyPolicy() {
             </ul>
           </section>
 
-          <section className="p-6 rounded-xl border border-brand-red/20 bg-brand-red/[0.02] relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-1.5 h-full bg-brand-red" />
+          <section className="p-6 rounded-xl border border-brand-blue/20 bg-brand-blue/[0.02] relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-1.5 h-full bg-brand-blue" />
             <h2 className="text-base font-bold text-white mb-3 flex items-center gap-2">
               <span>⚠️ Important: Voice Recording and SMS Consent Disclosures</span>
             </h2>
             <p className="text-xs leading-relaxed mb-3">
-              By calling, receiving a call from, or exchanging text messages with an Ascend AI phone number (or any number operated on behalf of an Ascend AI client company), you explicitly consent to the following:
+              By calling, receiving a call from, or exchanging text messages with a Maini Labs phone number (or any number operated on behalf of a Maini Labs client company), you explicitly consent to the following:
             </p>
             <ul className="list-disc pl-6 text-xs space-y-2">
               <li>
@@ -171,11 +171,11 @@ export default function PrivacyPolicy() {
               </p>
             </div>
             <a
-              href="mailto:support@ascendai.com"
-              className="inline-flex items-center gap-2 text-brand-red-light font-bold hover:text-white transition-colors"
+              href="mailto:support@mainilabs.com"
+              className="inline-flex items-center gap-2 text-brand-blue-light font-bold hover:text-white transition-colors"
             >
               <Mail className="h-4 w-4" />
-              <span>support@ascendai.com</span>
+              <span>support@mainilabs.com</span>
             </a>
           </section>
         </div>
@@ -184,7 +184,7 @@ export default function PrivacyPolicy() {
       {/* Mini Footer */}
       <footer className="bg-surface-dark border-t border-white/5 py-8 mt-16 text-center text-xs text-text-muted relative z-10">
         <div className="mx-auto max-w-5xl px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <span>© {new Date().getFullYear()} Ascend AI Corp. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} Maini Labs. All rights reserved.</span>
           <Link href="/" className="transition-colors hover:text-white">
             Return to Homepage
           </Link>

@@ -12,7 +12,7 @@ export default function FinalCTA({ onBookDemoClick }: FinalCTAProps) {
   return (
     <section className="relative py-24 bg-surface-dark overflow-hidden border-t border-white/5">
       {/* Dynamic background lighting */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] rounded-full bg-brand-red/5 blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] rounded-full bg-brand-blue/5 blur-[120px] pointer-events-none" />
       <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none" />
 
       <div className="mx-auto max-w-5xl px-6 lg:px-8 relative z-10 text-center">
@@ -24,11 +24,11 @@ export default function FinalCTA({ onBookDemoClick }: FinalCTAProps) {
           className="rounded-3xl border border-white/10 bg-black/60 p-12 md:p-16 backdrop-blur-xl relative overflow-hidden"
         >
           {/* Top subtle border laser line */}
-          <div className="absolute top-0 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-brand-red to-transparent" />
+          <div className="absolute top-0 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-brand-blue to-transparent" />
 
           <div className="mx-auto max-w-2xl flex flex-col items-center">
-            <div className="inline-flex items-center gap-2 rounded-full border border-brand-red/20 bg-brand-red/5 px-3 py-1 text-xs font-semibold tracking-wider text-brand-red-light uppercase mb-6">
-              <Sparkles className="h-3 w-3 text-brand-red-light" />
+            <div className="inline-flex items-center gap-2 rounded-full border border-brand-blue/20 bg-brand-blue/5 px-3 py-1 text-xs font-semibold tracking-wider text-brand-blue-light uppercase mb-6">
+              <Sparkles className="h-3 w-3 text-brand-blue-light" />
               <span>Get Started Today</span>
             </div>
 
@@ -43,7 +43,7 @@ export default function FinalCTA({ onBookDemoClick }: FinalCTAProps) {
             <div className="mt-10 flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-stretch justify-center">
               <button
                 onClick={onBookDemoClick}
-                className="glow-button flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-brand-red to-brand-red-light px-8 py-4 text-base font-bold text-white shadow-[0_0_20px_rgba(185,28,28,0.2)] hover:shadow-[0_0_35px_rgba(185,28,28,0.5)] transition-all hover:scale-[1.02]"
+                className="glow-button flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-brand-blue to-brand-blue-light px-8 py-4 text-base font-bold text-white shadow-[0_0_20px_rgba(0,82,255,0.2)] hover:shadow-[0_0_35px_rgba(0,82,255,0.5)] transition-all hover:scale-[1.02]"
               >
                 <span>Book Your Free Demo</span>
                 <ArrowRight className="h-5 w-5" />

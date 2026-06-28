@@ -25,7 +25,7 @@ export default function HowItWorks() {
       title: "AI Qualifies Prospect",
       description: "The AI conducts a friendly conversation to gather key details: budget, motivation, and timeline.",
       icon: ShieldCheck,
-      color: "border-brand-red/30 text-brand-red-light bg-surface-dark hover:bg-brand-red/[0.03]",
+      color: "border-brand-blue/30 text-brand-blue-light bg-surface-dark hover:bg-brand-blue/[0.03]",
     },
     {
       step: "04",
@@ -46,17 +46,17 @@ export default function HowItWorks() {
   return (
     <section id="process" className="relative py-24 bg-surface-dark overflow-hidden">
       {/* Decorative Blur Backgrounds */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-brand-red/3 blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full bg-brand-red-light/3 blur-[120px] pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-brand-blue/3 blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full bg-brand-blue-light/3 blur-[120px] pointer-events-none" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="max-w-3xl mb-20">
-          <span className="text-xs font-bold tracking-widest text-brand-red-light uppercase block mb-3">
+          <span className="text-xs font-bold tracking-widest text-brand-blue-light uppercase block mb-3">
             The Automation Process
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-gradient-silver">
-            How Ascend AI Works
+            How Maini Labs Works
           </h2>
           <p className="mt-4 text-base text-text-muted max-w-xl">
             Our systems seamlessly bridge the gap between initial lead creation and final booked meeting without manual effort.
@@ -72,7 +72,7 @@ export default function HowItWorks() {
               whileInView={{ height: "100%" }}
               viewport={{ once: true }}
               transition={{ duration: 1.5, ease: "easeInOut" }}
-              className="w-full bg-gradient-to-b from-brand-red via-brand-red-light to-emerald-500"
+              className="w-full bg-gradient-to-b from-brand-blue via-brand-blue-light to-emerald-500"
             />
           </div>
 
@@ -93,7 +93,7 @@ export default function HowItWorks() {
                     <div className={`relative z-10 flex h-[80px] w-[80px] items-center justify-center rounded-2xl border bg-surface-dark ${s.color} transition-all duration-300 hover:scale-105 shadow-lg`}>
                       <Icon className="h-7 w-7" />
                     </div>
-                    <span className="text-xs font-bold tracking-wider text-brand-red-light md:hidden">
+                    <span className="text-xs font-bold tracking-wider text-brand-blue-light md:hidden">
                       STEP {s.step}
                     </span>
                   </div>

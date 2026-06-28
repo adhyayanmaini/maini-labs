@@ -23,12 +23,17 @@ export default function Footer() {
     <footer className="bg-bg-dark border-t border-white/5 py-12 relative overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Logo left */}
-        <div className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-red text-white shadow-[0_0_10px_rgba(185,28,28,0.2)]">
-            <Rocket className="h-4.5 w-4.5" />
+        <div className="flex items-center gap-3">
+          <div className="relative flex items-center justify-center text-white">
+            <svg className="h-7 w-auto text-white" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              {/* Stylized M */}
+              <path d="M 28 80 L 28 20 L 50 52 L 72 20 L 72 58" stroke="currentColor" strokeWidth="14" strokeLinejoin="miter" strokeLinecap="butt" />
+              {/* Blue square */}
+              <rect x="65" y="69" width="14" height="14" fill="#0052FF" />
+            </svg>
           </div>
-          <span className="text-lg font-bold tracking-wider text-white uppercase">
-            Ascend <span className="text-brand-red-light">AI</span>
+          <span className="text-lg font-extrabold tracking-tight text-white font-sans flex items-center gap-1">
+            MAINI <span className="font-light text-brand-blue-light">LABS</span>
           </span>
         </div>
 
@@ -53,7 +58,7 @@ export default function Footer() {
 
         {/* Copyright right */}
         <div className="text-center md:text-right text-xs text-text-muted">
-          <p>© {new Date().getFullYear()} Ascend AI Corp. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Maini Labs. All rights reserved.</p>
           <p className="mt-1 text-[10px] opacity-75">Enterprise-grade systems engineered in Austin, TX.</p>
         </div>
       </div>

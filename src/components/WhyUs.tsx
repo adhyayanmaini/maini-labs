@@ -41,13 +41,13 @@ export default function WhyUs() {
   return (
     <section className="relative py-24 bg-surface-dark overflow-hidden border-t border-b border-white/5">
       {/* Background radial glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[350px] rounded-full bg-brand-red/3 blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[350px] rounded-full bg-brand-blue/3 blur-[140px] pointer-events-none" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="max-w-3xl mb-16">
-          <span className="text-xs font-bold tracking-widest text-brand-red-light uppercase block mb-3">
-            Why Ascend AI
+          <span className="text-xs font-bold tracking-widest text-brand-blue-light uppercase block mb-3">
+            Why Maini Labs
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-gradient-silver">
             The Competitive Advantage
@@ -71,7 +71,7 @@ export default function WhyUs() {
                 className="group p-8 rounded-2xl border border-white/5 bg-card-dark transition-all duration-300 hover:border-white/10 hover:-translate-y-1"
               >
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="p-2 rounded-lg bg-brand-red/5 border border-brand-red/10 text-brand-red-light transition-transform group-hover:scale-110">
+                  <div className="p-2 rounded-lg bg-brand-blue/5 border border-brand-blue/10 text-brand-blue-light transition-transform group-hover:scale-110">
                     <Icon className="h-5 w-5" />
                   </div>
                   <h3 className="text-lg font-bold text-white">{card.title}</h3>

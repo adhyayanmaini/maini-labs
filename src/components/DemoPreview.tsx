@@ -78,12 +78,12 @@ export default function DemoPreview() {
   return (
     <section className="relative py-24 bg-bg-dark overflow-hidden">
       {/* Background elements */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[300px] bg-brand-red/3 blur-[130px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[300px] bg-brand-blue/3 blur-[130px] rounded-full pointer-events-none" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold tracking-widest text-brand-red-light uppercase block mb-3">
+          <span className="text-xs font-bold tracking-widest text-brand-blue-light uppercase block mb-3">
             Interactive Simulator
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-gradient-silver">
@@ -113,9 +113,9 @@ export default function DemoPreview() {
                       <div
                         className={`absolute left-[-29px] top-1 flex h-6 w-6 items-center justify-center rounded-full border text-[10px] font-bold transition-all duration-300 ${
                           isCurrent
-                            ? "bg-brand-red border-brand-red text-white scale-110 shadow-[0_0_12px_rgba(185,28,28,0.6)]"
+                            ? "bg-brand-blue border-brand-blue text-white scale-110 shadow-[0_0_12px_rgba(0,82,255,0.6)]"
                             : isActive
-                            ? "bg-brand-red/20 border-brand-red/40 text-brand-red-light"
+                            ? "bg-brand-blue/20 border-brand-blue/40 text-brand-blue-light"
                             : "bg-black/40 border-white/5 text-text-muted"
                         }`}
                       >
@@ -146,7 +146,7 @@ export default function DemoPreview() {
                 <button
                   onClick={runSimulation}
                   disabled={isPlaying}
-                  className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-brand-red to-brand-red-light px-8 py-3 text-sm font-bold text-white transition-all shadow-[0_0_15px_rgba(185,28,28,0.2)] disabled:opacity-50"
+                  className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-brand-blue to-brand-blue-light px-8 py-3 text-sm font-bold text-white transition-all shadow-[0_0_15px_rgba(0,82,255,0.2)] disabled:opacity-50"
                 >
                   <Play className="h-4 w-4" />
                   <span>{isPlaying ? "Simulating..." : "Simulate Lead Intake"}</span>
@@ -154,7 +154,7 @@ export default function DemoPreview() {
               )}
 
               {isPlaying && (
-                <span className="text-xs text-brand-red-light font-semibold animate-pulse uppercase tracking-wider text-center sm:text-left">
+                <span className="text-xs text-brand-blue-light font-semibold animate-pulse uppercase tracking-wider text-center sm:text-left">
                   System Running...
                 </span>
               )}
@@ -166,12 +166,12 @@ export default function DemoPreview() {
             {/* Header */}
             <div className="bg-surface-dark border-b border-white/5 px-6 py-4 flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="relative flex h-8 w-8 items-center justify-center rounded-full bg-brand-red/10 border border-brand-red/20 text-brand-red-light">
+                <div className="relative flex h-8 w-8 items-center justify-center rounded-full bg-brand-blue/10 border border-brand-blue/20 text-brand-blue-light">
                   <Bot className="h-4.5 w-4.5" />
                   <span className="absolute bottom-0 right-0 h-2.5 w-2.5 rounded-full border border-card-dark bg-green-500" />
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-white">Ascend SMS Engine</div>
+                  <div className="text-xs font-bold text-white">Maini Labs SMS Engine</div>
                   <div className="text-[10px] text-text-muted">Chat with Lead (David Miller)</div>
                 </div>
               </div>
@@ -199,7 +199,7 @@ export default function DemoPreview() {
                   animate={{ opacity: 1 }}
                   className="flex gap-3 items-start my-auto justify-center text-center text-xs text-text-muted"
                 >
-                  <div className="animate-spin rounded-full h-4 w-4 border-2 border-brand-red border-t-transparent" />
+                  <div className="animate-spin rounded-full h-4 w-4 border-2 border-brand-blue border-t-transparent" />
                   <span>Waiting for inbound webhook...</span>
                 </motion.div>
               )}
@@ -216,7 +216,7 @@ export default function DemoPreview() {
                     {/* Icon */}
                     <div className={`flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full text-xs border ${
                       msg.sender === "bot"
-                        ? "bg-brand-red/10 border-brand-red/20 text-brand-red-light"
+                        ? "bg-brand-blue/10 border-brand-blue/20 text-brand-blue-light"
                         : "bg-white/5 border-white/10 text-text-muted"
                     }`}>
                       {msg.sender === "bot" ? <Bot className="h-3.5 w-3.5" /> : <User className="h-3.5 w-3.5" />}
@@ -226,7 +226,7 @@ export default function DemoPreview() {
                     <div className={`rounded-2xl p-4 text-sm leading-relaxed ${
                       msg.sender === "bot"
                         ? "bg-surface-dark border border-white/5 text-white rounded-tl-none"
-                        : "bg-brand-red text-white rounded-tr-none shadow-[0_4px_15px_rgba(185,28,28,0.15)]"
+                        : "bg-brand-blue text-white rounded-tr-none shadow-[0_4px_15px_rgba(0,82,255,0.15)]"
                     }`}>
                       {msg.text}
                     </div>
@@ -238,7 +238,7 @@ export default function DemoPreview() {
             {/* Input bar decoration */}
             <div className="bg-surface-dark border-t border-white/5 px-6 py-4 flex items-center justify-between text-xs text-text-muted">
               <span className="flex items-center gap-2">
-                <Database className="h-3.5 w-3.5 text-brand-red-light" />
+                <Database className="h-3.5 w-3.5 text-brand-blue-light" />
                 <span>Logs mapping directly to HubSpot CRM API</span>
               </span>
               <span className="italic">Read-only simulation</span>

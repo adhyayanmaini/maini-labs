@@ -26,8 +26,8 @@ export default function Hero({ onBookDemoClick, onSeeSolutionsClick }: HeroProps
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden bg-bg-dark">
       {/* Background Decorative Glows */}
-      <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] rounded-full bg-brand-red/5 blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] rounded-full bg-brand-red-light/5 blur-[150px] pointer-events-none" />
+      <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] rounded-full bg-brand-blue/5 blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] rounded-full bg-brand-blue-light/5 blur-[150px] pointer-events-none" />
       <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] pointer-events-none" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8 w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
@@ -39,17 +39,17 @@ export default function Hero({ onBookDemoClick, onSeeSolutionsClick }: HeroProps
             transition={{ duration: 0.6 }}
           >
             <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-surface-dark px-3 py-1 text-xs font-medium text-text-muted mb-6">
-              <span className="flex h-2 w-2 rounded-full bg-brand-red animate-pulse-glow" />
+              <span className="flex h-2 w-2 rounded-full bg-brand-blue animate-pulse-glow" />
               <span>Next-Gen Intelligent Automations</span>
             </div>
 
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1] text-gradient-silver">
               Stop Losing Leads. <br />
-              <span className="text-gradient-red">Start Closing More Deals.</span>
+              <span className="text-gradient-blue">Start Closing More Deals.</span>
             </h1>
 
             <p className="mt-6 text-sm sm:text-base md:text-lg text-text-muted leading-relaxed max-w-xl">
-              Ascend AI builds enterprise-grade AI systems that answer calls, qualify leads, follow up automatically, and book appointments so your business never misses an opportunity.
+              Maini Labs builds enterprise-grade AI systems that answer calls, qualify leads, follow up automatically, and book appointments so your business never misses an opportunity.
             </p>
           </motion.div>
 
@@ -61,7 +61,7 @@ export default function Hero({ onBookDemoClick, onSeeSolutionsClick }: HeroProps
           >
             <button
               onClick={onBookDemoClick}
-              className="glow-button flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-brand-red to-brand-red-light px-8 py-4 text-base font-bold text-white shadow-[0_0_20px_rgba(185,28,28,0.2)] hover:shadow-[0_0_30px_rgba(185,28,28,0.4)] transition-all hover:scale-[1.02]"
+              className="glow-button flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-brand-blue to-brand-blue-light px-8 py-4 text-base font-bold text-white shadow-[0_0_20px_rgba(0,82,255,0.2)] hover:shadow-[0_0_30px_rgba(0,82,255,0.4)] transition-all hover:scale-[1.02]"
             >
               <span>Book a Demo</span>
               <ArrowRight className="h-5 w-5" />
@@ -106,17 +106,17 @@ export default function Hero({ onBookDemoClick, onSeeSolutionsClick }: HeroProps
             className="relative w-full max-w-lg aspect-square sm:aspect-[4/3] md:aspect-square lg:aspect-auto min-h-[380px] sm:min-h-[420px] lg:min-h-[440px] rounded-2xl border border-white/10 bg-surface-dark/60 p-6 backdrop-blur-xl overflow-hidden shadow-2xl flex flex-col justify-between"
           >
             {/* Top Bar Decoration */}
-            <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-brand-red/30 to-transparent" />
+            <div className="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-brand-blue/30 to-transparent" />
             
             {/* Dashboard Header */}
             <div className="flex items-center justify-between border-b border-white/5 pb-4 mb-4">
               <div className="flex items-center gap-2">
-                <span className="w-3 h-3 rounded-full bg-brand-red/80" />
+                <span className="w-3 h-3 rounded-full bg-brand-blue/80" />
                 <span className="w-3 h-3 rounded-full bg-yellow-500/80" />
                 <span className="w-3 h-3 rounded-full bg-green-500/80" />
-                <span className="text-xs font-semibold text-text-muted ml-2 uppercase tracking-widest">Ascend AI Console</span>
+                <span className="text-xs font-semibold text-text-muted ml-2 uppercase tracking-widest">Maini Labs Console</span>
               </div>
-              <span className="rounded-full bg-white/5 border border-white/10 px-2 py-0.5 text-[10px] text-brand-red-light uppercase font-semibold">
+              <span className="rounded-full bg-white/5 border border-white/10 px-2 py-0.5 text-[10px] text-brand-blue-light uppercase font-semibold">
                 Live Engine
               </span>
             </div>
@@ -134,7 +134,7 @@ export default function Hero({ onBookDemoClick, onSeeSolutionsClick }: HeroProps
                     exit={{ opacity: 0, y: -15, scale: 0.95 }}
                     transition={{ duration: 0.4 }}
                     className={`glass-card p-4 rounded-xl flex items-center justify-between relative overflow-hidden ${
-                      activeCycle === 0 ? "border-brand-red bg-brand-red/[0.02]" : "border-white/5"
+                      activeCycle === 0 ? "border-brand-blue bg-brand-blue/[0.02]" : "border-white/5"
                     }`}
                   >
                     <div className="flex items-center gap-3">
@@ -161,7 +161,7 @@ export default function Hero({ onBookDemoClick, onSeeSolutionsClick }: HeroProps
                     exit={{ opacity: 0, y: -15, scale: 0.95 }}
                     transition={{ duration: 0.4 }}
                     className={`glass-card p-4 rounded-xl flex items-center justify-between relative overflow-hidden ${
-                      activeCycle === 1 ? "border-brand-red bg-brand-red/[0.02]" : "border-white/5"
+                      activeCycle === 1 ? "border-brand-blue bg-brand-blue/[0.02]" : "border-white/5"
                     }`}
                   >
                     <div className="flex items-center gap-3">
@@ -175,10 +175,10 @@ export default function Hero({ onBookDemoClick, onSeeSolutionsClick }: HeroProps
                     </div>
                     {/* Simulated Voice Waveform */}
                     <div className="flex items-center gap-1.5 h-6">
-                      <motion.span animate={{ height: [8, 20, 8] }} transition={{ repeat: Infinity, duration: 1 }} className="w-1 bg-brand-red rounded-full" />
-                      <motion.span animate={{ height: [12, 24, 12] }} transition={{ repeat: Infinity, duration: 0.8 }} className="w-1 bg-brand-red-light rounded-full" />
-                      <motion.span animate={{ height: [6, 16, 6] }} transition={{ repeat: Infinity, duration: 1.2 }} className="w-1 bg-brand-red rounded-full" />
-                      <motion.span animate={{ height: [10, 20, 10] }} transition={{ repeat: Infinity, duration: 0.9 }} className="w-1 bg-brand-red-light rounded-full" />
+                      <motion.span animate={{ height: [8, 20, 8] }} transition={{ repeat: Infinity, duration: 1 }} className="w-1 bg-brand-blue rounded-full" />
+                      <motion.span animate={{ height: [12, 24, 12] }} transition={{ repeat: Infinity, duration: 0.8 }} className="w-1 bg-brand-blue-light rounded-full" />
+                      <motion.span animate={{ height: [6, 16, 6] }} transition={{ repeat: Infinity, duration: 1.2 }} className="w-1 bg-brand-blue rounded-full" />
+                      <motion.span animate={{ height: [10, 20, 10] }} transition={{ repeat: Infinity, duration: 0.9 }} className="w-1 bg-brand-blue-light rounded-full" />
                     </div>
                   </motion.div>
                 )}
@@ -192,11 +192,11 @@ export default function Hero({ onBookDemoClick, onSeeSolutionsClick }: HeroProps
                     exit={{ opacity: 0, y: -15, scale: 0.95 }}
                     transition={{ duration: 0.4 }}
                     className={`glass-card p-4 rounded-xl flex items-center justify-between relative overflow-hidden ${
-                      activeCycle === 2 ? "border-brand-red bg-brand-red/[0.02]" : "border-white/5"
+                      activeCycle === 2 ? "border-brand-blue bg-brand-blue/[0.02]" : "border-white/5"
                     }`}
                   >
                     <div className="flex items-center gap-3">
-                      <div className="p-2.5 rounded-lg bg-brand-red/10 border border-brand-red/20 text-brand-red-light">
+                      <div className="p-2.5 rounded-lg bg-brand-blue/10 border border-brand-blue/20 text-brand-blue-light">
                         <CheckCircle className="h-5 w-5" />
                       </div>
                       <div>
@@ -224,7 +224,7 @@ export default function Hero({ onBookDemoClick, onSeeSolutionsClick }: HeroProps
                     exit={{ opacity: 0, y: -15, scale: 0.95 }}
                     transition={{ duration: 0.4 }}
                     className={`glass-card p-4 rounded-xl flex items-center justify-between relative overflow-hidden ${
-                      activeCycle === 3 ? "border-brand-red bg-brand-red/[0.02]" : "border-white/5"
+                      activeCycle === 3 ? "border-brand-blue bg-brand-blue/[0.02]" : "border-white/5"
                     }`}
                   >
                     <div className="flex items-center gap-3">
@@ -253,12 +253,12 @@ export default function Hero({ onBookDemoClick, onSeeSolutionsClick }: HeroProps
               </div>
               <div className="flex items-center gap-3">
                 <span>Total Calls: 1,482</span>
-                <span className="text-brand-red-light font-bold">ROI: +420%</span>
+                <span className="text-brand-blue-light font-bold">ROI: +420%</span>
               </div>
             </div>
 
             {/* Subtle floating glass overlay element for depth */}
-            <div className="absolute -bottom-8 -right-8 w-32 h-32 rounded-full bg-brand-red/10 blur-xl pointer-events-none" />
+            <div className="absolute -bottom-8 -right-8 w-32 h-32 rounded-full bg-brand-blue/10 blur-xl pointer-events-none" />
           </motion.div>
         </div>
       </div>
